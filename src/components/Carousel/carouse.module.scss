@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+}
+.carousel {
+  flex: 1; //cresce e ocupa todo o espaço do container
+  width: 100%;
+  position: relative; //para aplicar o left
+  left: -10%;
+}
+.wrapper {
+  height: 130vh; //130% da altura da tela, corta um pouco
+  position: relative;
+  cursor: grap;
+
+  &:active {
+    cursor: grabbing; //fecha mão pa/ arrastar
+  }
+}
+.details {
+  flex: 1;
+  position: relative;
+  margin-top: 3rem;
+}
+.hero {
+  height: 100%;
+  position: absolute; //heroi sobre eoutro
+  width: 500px;
+  left: 0;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+    object-fit: center right;
+    width: 100%;
+  }
+}
